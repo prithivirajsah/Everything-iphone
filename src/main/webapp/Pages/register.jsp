@@ -75,7 +75,7 @@
 
                     <div class="Signupform">
                         <div class="detail">
-                            <label for="state">State:</label>
+                             <label for="state">State:</label>
                             <input type="text" id="state" name="state" required>
                         </div>
                     </div>
