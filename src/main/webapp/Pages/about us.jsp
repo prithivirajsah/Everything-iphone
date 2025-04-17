@@ -7,7 +7,7 @@
 	<meta name="Author" content="Prithvi">
     <meta http-equiv="refresh" content="120">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
- 	<link rel="stylesheet" href="${pageContext.request.contextPath}/Css/about us.css"/>
+ 	<link rel="stylesheet" href="${pageContext.request.contextPath}/Css/aboutus.css"/>
  	<link rel="stylesheet" href="${pageContext.request.contextPath}/Css/header.css"/>
   	<link rel="stylesheet" href="${pageContext.request.contextPath}/Css/footer.css"/>
 </head>
@@ -22,7 +22,7 @@
                 <tr>
                     <td style="width: 30%;"> 
                         <div class="pic" style="background-image:">
-                        	<img src="../Resources/image/....... ">
+                        	<img src="../Resources/image/prithvi.png">
                         </div> 
                     </td>
                     
@@ -31,17 +31,16 @@
                             <h1>Team Member</h1> 
                             <h3>Prithivi Raj Sah</h3> 
                             <h3>BSc Computing student</h3>  
-                              
                         </div> 
                         <div class="social-links">
                             <a href="https://www.facebook.com/profile.php?id=100084882249955&mibextid=gik2fB">
-                                <img class="icon" src="/images/about-icons/about-fb.png" alt="facebook">
+                                <img class="icon" src="../Resources/image/facebook.png" alt="facebook">
                             </a>   
                             <a href="https://www.instagram.com/prithivirajsah1?igsh=YWtncHBibzU4bml5">                      
-                                <img class="icon" src="/images/about-icons/about-insta.png" alt="instagram">
+                                <img class="icon" src="../Resources/image/instagram.png" alt="instagram">
                             </a>                        
                             <a href="https://www.linkedin.com/in/prithivirajsah-bb4314297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                                <img class="icon" src="/images/about-icons/about-linkdein.png" alt="linkdein">
+                                <img class="icon" src="../Resources/image/linkdein.png" alt="linkdein">
                             </a>
                         </div>
                         <a href="Prithivi.html"><button class="see-more">View Details</button></a>
@@ -62,15 +61,15 @@
                                
                         </div> 
                         <div class="social-links">
-                            <a href="https://www.facebook.com/profile.php?id=100084882249955&mibextid=gik2fB">
-                                <img class="icon" src="/images/about-icons/about-fb.png" alt="facebook">
+                            <a href="">
+                                <img class="icon" src="../Resources/image/facebook.png" alt="facebook">
                             </a>   
-                            <a href="https://www.instagram.com/prithivirajsah1?igsh=YWtncHBibzU4bml5">                      
-                                <img class="icon" src="/images/about-icons/about-insta.png" alt="instagram">
+                            <a href="">                      
+                                <img class="icon" src="../Resources/image/instagram.png" alt="instagram">
                             </a>                        
 
-                            <a href="https://www.linkedin.com/in/prithivirajsah-bb4314297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                                <img class="icon" src="/images/about-icons/about-linkdein.png" alt="linkdein">
+                            <a href="">
+                                <img class="icon" src="../Resources/image/linkdein.png" alt="linkdein">
                             </a>
                         </div>
                         <a href="Prithivi.html"><button class="see-more">View Details</button></a>
@@ -93,14 +92,14 @@
                             
                         </div>     
                         <div class="social-links">
-                            <a href="https://www.facebook.com/profile.php?id=100075410348144">
-                                <img class="icon" src="/images/about-icons/about-fb.png" alt="facebook">
+                            <a href="">
+                                <img class="icon" src="../Resources/image/facebook.png" alt="facebook">
                             </a>   
-                            <a href="https://www.instagram.com/_kris_hna01/">                      
-                                <img class="icon" src="/images/about-icons/about-insta.png" alt="instagram">
+                            <a href="">                      
+                                <img class="icon" src="../Resources/image/instagram.png" alt="instagram">
                             </a>                        
-                            <a href="www.linkedin.com/in/krishnasingh09">
-                                <img class="icon" src="/images/about-icons/about-linkdein.png" alt="linkdein">
+                            <a href="">
+                                <img class="icon" src="../Resources/image/linkdein.png" alt="linkdein">
                             </a>
 
                         </div>
@@ -117,18 +116,18 @@
                     <td> 
                         <div class="text"> 
                             <h1>Team Member</h1> 
-                            <h3>Nikesh Neupanel</h3> 
+                            <h3>Abhishek Kumar Sah</h3> 
                             <h3>BSc Computing student</h3>
                         </div>     
                         <div class="social-links">
-                            <a href="https://www.facebook.com/safal.dangal?mibextid=9R9pXO">
-                                <img class="icon" src="/images/about-icons/about-fb.png" alt="facebook">
+                            <a href="">
+                                <img class="icon" src="../Resources/image/facebook.png" alt="facebook">
                             </a>   
-                            <a href="https://www.instagram.com/dangal.safal?igsh=MWJ5b3Y4M3d5emFvMA==">                      
-                                <img class="icon" src="/images/about-icons/about-insta.png" alt="instagram">
+                            <a href="https://www.instagram.com/abhi____0412/">                      
+                                <img class="icon" src="../Resources/image/instagram.png" alt="instagram">
                             </a>                        
-                            <a href="https://www.linkedin.com/">
-                                <img class="icon" src="/images/about-icons/about-linkdein.png" alt="linkdein">
+                            <a href="https://www.linkedin.com/in/abhishek-sah-729134330/">
+                                <img class="icon" src="../Resources/image/linkdein.png" alt="linkdein">
                             </a>
                         </div> 
                         <a href="safal.html"><button class="see-more">View Details</button></a>
@@ -144,18 +143,18 @@
                     <td> 
                         <div class="text"> 
                             <h1>Team Member</h1> 
-                            <h3>Abhishek Kumar Sah</h3>
+                            <h3></h3>
                             <h3>BSc Computing student</h3>
                         </div>     
                         <div class="social-links">
-                            <a href="https://www.facebook.com/safal.dangal?mibextid=9R9pXO">
-                                <img class="icon" src="/images/about-icons/about-fb.png" alt="facebook">
+                            <a href="">
+                                <img class="icon" src="../Resources/image/facebook.png" alt="facebook">
                             </a>   
-                            <a href="https://www.instagram.com/dangal.safal?igsh=MWJ5b3Y4M3d5emFvMA==">                      
-                                <img class="icon" src="/images/about-icons/about-insta.png" alt="instagram">
+                            <a href="">                      
+                                <img class="icon" src="../Resources/image/instagram.png" alt="instagram">
                             </a>                        
-                            <a href="https://www.linkedin.com/">
-                                <img class="icon" src="/images/about-icons/about-linkdein.png" alt="linkdein">
+                            <a href="">
+                                <img class="icon" src="../Resources/image/linkdein.png" alt="linkdein">
                             </a>
                         </div> 
                         <a href="safal.html"><button class="see-more">View Details</button></a>
