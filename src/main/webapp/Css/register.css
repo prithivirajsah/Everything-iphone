@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+	width: 100%;
+    height: 100vh;
+    background-color: #2e2e2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-box {
+    background-color: #fff;
+    padding: 40px 50px;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    width: 600px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.Signup, .Signupform {
+    margin-bottom: 20px;
+}
+
+.detail {
+    text-align: left;
+}
+
+.detail label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #444;
+}
+
+.detail input,
+.detail select {
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 16px;
+    border: 1.5px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.detail input:focus,
+.detail select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.button {
+    margin-top: 25px;
+}
+
+.login-button {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+.signuptext {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+.signuptext a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signuptext a:hover {
+    text-decoration: underline;
+}

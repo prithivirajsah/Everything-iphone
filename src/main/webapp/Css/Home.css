@@ -1,0 +1,105 @@
+/* Home page Specific Styles */
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  padding-top: 120px;
+}
+
+.textbox {
+  margin-top: 40px;
+}
+
+.textbox h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.textbox p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.shop-button {
+  background-color: #0071e3;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.shop-button:hover {
+  background-color: #005bb5;
+}
+
+.launch-section {
+  margin-top: 2rem;
+}
+
+.launch-section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.launch-img {
+  max-width: 800px;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 1rem;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.reviews {
+  text-align: center;
+  padding: 4rem 1rem;
+  background-color: #111;
+  color: #fff;
+}
+
+.reviews h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.review-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.review-card {
+  background: #1a1a1a;
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.review-card p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.review-card .stars {
+  color: orange;
+  font-size: 1.2rem;
+}
+
+.review-card .company {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+

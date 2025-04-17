@@ -1,0 +1,127 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 	<link rel="stylesheet" href="${pageContext.request.contextPath}/Css/contact us.css"/>
+ 	<link rel="stylesheet" href="${pageContext.request.contextPath}/Css/header.css"/>
+  	<link rel="stylesheet" href="${pageContext.request.contextPath}/Css/footer.css"/>
+</head>
+<body>
+	<!-- Header Include -->
+		<jsp:include page="header.jsp"/>
+		
+		<div class="container">
+		<main class="row">
+			
+			<!--Left Section (Column) Starts-->
+
+			<section class="col left">
+				
+				<!--Title Starts-->
+
+				<div class="contactTitle">
+					<h1>Get In Touch</h1>
+					
+				</div>
+
+				<!--Title Ends-->
+
+				<!--Contact Info Starts-->
+
+				<div class="contactInfo">
+					
+					<div class="iconGroup">
+						<div class="icon">
+							<i class="fa-solid fa-phone"></i>
+						</div>
+						
+						<div class="details">
+							<span>Phone</span>
+							<span>+977 9815836412</span>
+						</div>
+					</div>
+
+					<div class="iconGroup">
+						<div class="icon">
+							<i class="fa-solid fa-envelope"></i>
+						</div>
+						
+						<div class="details">
+							<span>Email</span>
+							<span>Prithivirajsah584@gmail.com</span>
+						</div>
+					</div>
+
+					<div class="iconGroup">
+						<div class="icon">
+							<i class="fa-solid fa-location-dot"></i>
+						</div>
+						
+						<div class="details">
+							<span>Location</span>
+							<span>Jhamsikhel, Kathmandu</span>
+						</div>
+					</div>
+				</div>
+
+				<!--Contact Info Ends-->
+
+				<!--Social Media Starts-->
+
+				<div class="socialMedia">
+					<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+					<a href="#"><i class="fa-brands fa-twitter"></i></a>
+					<a href="https://www.instagram.com/prithivirajsah1/"><i class="fa-brands fa-instagram"></i></a>
+					<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+				</div>
+
+				<!--Social Media Ends-->
+
+			</section>
+
+			<!--Left Section (Column) Ends-->
+
+			<!--Right Section (Column) Starts-->
+
+			<section class="col right">
+				
+				<!--Form Starts-->
+
+				<form class="messageForm">
+					
+					<div class="inputGroup halfWidth">
+						<input type="text" name="" required="required">
+						<label>Your Name</label>
+					</div>
+
+					<div class="inputGroup halfWidth">
+						<input type="email" name="" required="required">
+						<label>Email</label>
+					</div>
+
+					<div class="inputGroup fullWidth">
+						<input type="text" name="" required="required">
+						<label>Subject</label>
+					</div>
+
+					<div class="inputGroup fullWidth">
+						<textarea required="required"></textarea>
+						<label>Say Something</label>
+					</div>
+
+					<div class="inputGroup fullWidth">
+						<button>Send Message</button>
+					</div>
+				</form>
+				<!--Form Ends-->
+			</section>
+			<!--Right Section (Column) Ends-->
+		</main>
+	</div>
+	
+	<!-- Footer Include -->
+    	<jsp:include page="footer.jsp"/>
+</body>
+</html>
