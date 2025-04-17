@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.register-box {
+    width: 70%;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px; /* Border radius for the popup effect */
+    animation: fadeIn 0.5s ease-in-out; /* Animation for fade-in effect */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.register-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Image Section */
+.image-section {
+    width: 45%;
+}
+
+.image-section img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* Form Section */
+.form-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.Signup, .Signupform {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+/* Added gap between fields */
+.Signup .detail, .Signupform .detail {
+    margin-bottom: 20px;  /* Increased gap between fields */
+}
+
+.detail {
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select {
+    padding: 12px;  /* Apply padding 12px all around */
+    font-size: 14px;
+    border-radius: 8px; /* Added more roundness to the input fields */
+    border: 1px solid #ddd;
+    width: 100%; /* Full width of the container */
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Animation for focus */
+}
+
+/* Focus animation for inputs */
+input:focus, select:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+input:hover, select:hover {
+    border-color: #007BFF;
+}
+
+/* Gender Dropdown Styling */
+.Signup .detail select {
+    padding: 12px;  /* Increased padding for consistency */
+    font-size: 14px;
+}
+
+/* Button Styling */
+button {
+    background-color: #007BFF; /* Blue background */
+    color: white;
+    border: none;
+    padding: 15px;  /* Full width and better height */
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px; /* Rounded button */
+    width: 100%;  /* Full width button */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animation for hover */
+}
+
+/* Button Hover and Focus Animations */
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight pop-up effect */
+}
+
+button:focus {
+    outline: none; /* Removes default outline */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Adds blue focus shadow */
+}
+
+/* Button and Sign Up Text Styles */
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.signuptext {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signuptext a {
+    color: #007BFF; /* Matching link color */
+    text-decoration: none;
+}
+
+.signuptext a:hover {
+    text-decoration: underline;
+}
