@@ -17,7 +17,7 @@
 	<jsp:include page="header.jsp"/>
 
 	<div class="main">
-            <h1 align="center" style="color: white; font-size: 55px;">Team Members</h1>
+            <h1 align="center" style="color: white; font-size: 100px;">Team Members</h1>
             <table class="row">        <!---table for each-->
                 <tr>
                     <td style="width: 30%;"> 
@@ -26,7 +26,7 @@
                     
                     <td> 
                         <div class="text"> 
-                            <h1>Team Member</h1> 
+                             
                             <h3>Prithivi Raj Sah</h3> 
                             <h3>BSc Computing student</h3>  
                         </div> 
@@ -41,7 +41,7 @@
                                 <img class="icon" src="../Resources/image/linkdein.png" alt="linkdein">
                             </a>
                         </div>
-                        <a href="Prithivi.html"><button class="see-more">View Details</button></a>
+                        <a href="Prithivi Aboutus.jsp"><button class="see-more">View Details</button></a>
                   </td>   
                </tr>
            </table>
@@ -49,12 +49,12 @@
             <table class="row"><!---table for each-->
                 <tr>
                     <td style="width: 30%;"> 
-                        <div class="pic" style="background-image: url(/images/profile-pic/prithvi.png);"></div> 
+                        <div class="pic" style="background-image: url(../Resources/image/AayushKhatiwada.jpg);"></div> 
                     </td>
                     <td> 
                         <div class="text"> 
-                            <h1>Team Member</h1> 
-                            <h3></h3> 
+                            
+                            <h3>Aayush Khatiwada</h3> 
                             <h3>BSc Computing student</h3>  
                                
                         </div> 
@@ -84,8 +84,8 @@
                     </td>
                     <td> 
                         <div class="text"> 
-                            <h1>Team Member</h1> 
-                            <h3>Jayan Raut</h3> 
+                             
+                            <h3>Jayan Rau</h3> 
                             <h3>BSc Computing student</h3>
                             
                         </div>     
@@ -109,11 +109,11 @@
             <table class="row"><!---table for each-->
                 <tr>
                     <td style="width: 30%;"> 
-                        <div class="pic" style="background-image: url(/images/profile-pic/safal.png);"></div> 
+                        <div class="pic" style="background-image: url(../Resources/image/Abishekkumarsah.jpg);"></div> 
                     </td>
                     <td> 
                         <div class="text"> 
-                            <h1>Team Member</h1> 
+                            
                             <h3>Abhishek Kumar Sah</h3> 
                             <h3>BSc Computing student</h3>
                         </div>     
@@ -136,19 +136,19 @@
              <table class="row"><!---table for each-->
                 <tr>
                     <td style="width: 30%;"> 
-                        <div class="pic" style="background-image: url(../Resources/image/Nikesh.png);"> </div> 
+                        <div class="pic" style="background-image: url(../Resources/image/nikesh.jpg);"> </div> 
                     </td>
                     <td> 
                         <div class="text"> 
-                            <h1>Team Member</h1> 
-                            <h3></h3>
+                            
+                            <h3>Nikesh </h3>
                             <h3>BSc Computing student</h3>
                         </div>     
                         <div class="social-links">
                             <a href="">
                                 <img class="icon" src="../Resources/image/facebook.png" alt="facebook">
                             </a>   
-                            <a href="">                      
+                            <a href="https://www.instagram.com/_bookforbreakfast/">                      
                                 <img class="icon" src="../Resources/image/instagram.png" alt="instagram">
                             </a>                        
                             <a href="">
