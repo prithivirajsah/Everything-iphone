@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 body {
@@ -24,8 +24,6 @@ body {
     width: 700px;
     text-align: left;
 }
-
-
 
 .title {
     font-size: 40px;
@@ -121,3 +119,10 @@ body {
     text-decoration: none;
     color: #0000ee;
 }
+
+.signuptext a:hover {
+    text-decoration: underline;
+}   
+    
+    
+   

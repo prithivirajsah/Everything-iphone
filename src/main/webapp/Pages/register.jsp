@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Registration</title>
-    <link rel="stylesheet" href="../Css/test.css"/>
+    <link rel="stylesheet" href="../Css/register.css"/>
 </head>
 <body>
 
@@ -107,6 +107,21 @@
             </div>
         </div>
     </div>
+    
+	<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector("form");
+        form.addEventListener("submit", function (e) {
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirmpassword").value;
+
+            if (password !== confirmPassword) {
+                e.preventDefault();
+                alert("Passwords do not match!");
+            }
+        });
+    });
+</script>
 
 </body>
 </html>
