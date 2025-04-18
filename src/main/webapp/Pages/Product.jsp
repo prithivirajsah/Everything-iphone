@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="${pageContext.request.contextPath}/Css/Product.css"/>
   <link rel="stylesheet" href="${pageContext.request.contextPath}/Css/header.css"/>
   <link rel="stylesheet" href="${pageContext.request.contextPath}/Css/footer.css"/>
-  
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/Css/footer.css"/>
   
 </head>
 <body>
@@ -50,7 +50,9 @@
         </div>
         <div class="price-action">
           <span class="price">234000 NPR</span>
-          <button class="buy-button">Buy Now</button>
+          <a href="addcart.jsp"><button class="buy-button" >Buy Now</button></a>
+          
+           
         </div>
       </div>
     </div>

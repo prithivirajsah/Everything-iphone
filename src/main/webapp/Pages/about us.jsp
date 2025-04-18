@@ -18,12 +18,10 @@
 
 	<div class="main">
             <h1 align="center" style="color: white; font-size: 55px;">Team Members</h1>
-            <table class="row"><!---table for each-->
+            <table class="row">        <!---table for each-->
                 <tr>
                     <td style="width: 30%;"> 
-                        <div class="pic" style="background-image:">
-                        	<img src="../Resources/image/prithvi.png">
-                        </div> 
+                        <div class="pic" style="background-image: url(../Resources/image/Prithivirajsah.jpg);"></div>	
                     </td>
                     
                     <td> 
@@ -56,7 +54,7 @@
                     <td> 
                         <div class="text"> 
                             <h1>Team Member</h1> 
-                            <h3>Prithivi Raj Sah </h3> 
+                            <h3></h3> 
                             <h3>BSc Computing student</h3>  
                                
                         </div> 
@@ -138,7 +136,7 @@
              <table class="row"><!---table for each-->
                 <tr>
                     <td style="width: 30%;"> 
-                        <div class="pic" style="background-image: url(/images/profile-pic/safal.png);"></div> 
+                        <div class="pic" style="background-image: url(../Resources/image/Nikesh.png);"> </div> 
                     </td>
                     <td> 
                         <div class="text"> 
