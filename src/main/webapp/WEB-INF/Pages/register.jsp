@@ -101,7 +101,7 @@
 
                     <div class="signuptext">
                         Already have an account? 
-                        <a href="${pageContext.request.contextPath}/login.jsp">Login</a>
+                        <a href="${pageContext.request.contextPath}/logincontroller">Login</a>
                     </div>
 
                 </form>

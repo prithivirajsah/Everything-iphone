@@ -50,9 +50,7 @@
         </div>
         <div class="price-action">
           <span class="price">234000 NPR</span>
-          <a href="addcart.jsp"><button class="buy-button" >Buy Now</button></a>
-          
-           
+          <a href="addcart.jsp"><button class="buy-button" >Buy Now</button></a> 
         </div>
       </div>
     </div>

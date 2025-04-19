@@ -34,7 +34,7 @@
 
                 <div class="text sign-up-text">
                     Don't have an account? 
-                    <a href="${pageContext.request.contextPath}/Pages/register.jsp">Register now</a>
+                    <a href="${pageContext.request.contextPath}/Register">Register now</a>
                 </div>
             </form>
         </div>
