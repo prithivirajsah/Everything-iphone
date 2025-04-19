@@ -136,12 +136,12 @@
              <table class="row"><!---table for each-->
                 <tr>
                     <td style="width: 30%;"> 
-                        <div class="pic" style="background-image: url(../Resources/image/nikesh.jpg);"> </div> 
+                        <div class="pic" style="background-image: url(../Resources/image/NikeshNeupane.jpg);"> </div> 
                     </td>
                     <td> 
                         <div class="text"> 
                             
-                            <h3>Nikesh </h3>
+                            <h3>Nikesh Neupane</h3>
                             <h3>BSc Computing student</h3>
                         </div>     
                         <div class="social-links">
