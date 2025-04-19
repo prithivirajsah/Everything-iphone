@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Registration</title>
-    <link rel="stylesheet" href="../Css/register.css"/>
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/Css/register.css"/>
+
 </head>
 <body>
 
@@ -100,7 +101,7 @@
 
                     <div class="signuptext">
                         Already have an account? 
-                        <a href="${pageContext.request.contextPath}/Pages/login.jsp">Login</a>
+                        <a href="${pageContext.request.contextPath}/login.jsp">Login</a>
                     </div>
 
                 </form>

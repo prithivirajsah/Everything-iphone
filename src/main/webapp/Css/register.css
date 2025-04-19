@@ -15,16 +15,7 @@ body {
     animation: fadeIn 1s ease-in;
 }
 
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: scale(0.95);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
+
 
 .register-box {
     background-color: #fff;
@@ -36,7 +27,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    animation: fadeIn 1.2s ease-in-out;
+
 }
 
 .register-content {

@@ -362,7 +362,7 @@
 
     <jsp:include page="footer.jsp"/>
 
-  <script>
+<script>
     const searchInput = document.querySelector('.search-input');
     const storageSelect = document.querySelector('.storage-select');
     const productCards = document.querySelectorAll('.product-card');
@@ -376,12 +376,27 @@
         const storage = card.querySelector('.storage-badge').textContent;
         const matchesText = name.includes(searchTerm);
         const matchesStorage = selectedStorage === 'all' || storage.includes(selectedStorage);
-        card.style.display = matchesText && matchesStorage ? 'block' : 'none';
+        card.style.display = (matchesText && matchesStorage) ? 'block' : 'none';
       });
     }
+    
+    /* thapeko part for Cart */
+    
+   function buyNow(name, price) {
+     const cart = [{
+     name: name,
+     price: price,
+     quantity: 1
+    }];
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+        window.location.href = "<%= request.getContextPath() %>/cart.jsp";
+
+      }
 
     searchInput.addEventListener('input', filterProducts);
     storageSelect.addEventListener('change', filterProducts);
   </script>
+
 </body>
 </html>
