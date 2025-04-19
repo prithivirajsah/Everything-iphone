@@ -17,11 +17,11 @@
 	<jsp:include page="header.jsp"/>
 
 	<div class="main">
-            <h1 align="center" style="color: white; font-size: 100px;">Team Members</h1>
+            <h1 align="center" style="color: white; font-size: 90px;">Team Members</h1>
             <table class="row">        <!---table for each-->
                 <tr>
                     <td style="width: 30%;"> 
-                        <div class="pic" style="background-image: url(../Resources/image/Prithivirajsah.jpg);"></div>	
+                        <div class="pic" style="background-image: url(${pageContext.request.contextPath}/Resources/image/prithvi.png);"></div>	
                     </td>
                     
                     <td> 
@@ -32,13 +32,13 @@
                         </div> 
                         <div class="social-links">
                             <a href="https://www.facebook.com/profile.php?id=100084882249955&mibextid=gik2fB">
-                                <img class="icon" src="../Resources/image/facebook.png" alt="facebook">
+                                <img class="icon" src="${pageContext.request.contextPath}/Resources/image/facebook.png" alt="facebook">
                             </a>   
                             <a href="https://www.instagram.com/prithivirajsah1?igsh=YWtncHBibzU4bml5">                      
-                                <img class="icon" src="../Resources/image/instagram.png" alt="instagram">
+                                <img class="icon" src="${pageContext.request.contextPath}/Resources/image/instagram.png" alt="instagram">
                             </a>                        
                             <a href="https://www.linkedin.com/in/prithivirajsah-bb4314297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                                <img class="icon" src="../Resources/image/linkdein.png" alt="linkdein">
+                                <img class="icon" src="${pageContext.request.contextPath}/Resources/image/linkdein.png" alt="linkdein">
                             </a>
                         </div>
                         <a href="Prithivi Aboutus.jsp"><button class="see-more">View Details</button></a>
@@ -49,7 +49,7 @@
             <table class="row"><!---table for each-->
                 <tr>
                     <td style="width: 30%;"> 
-                        <div class="pic" style="background-image: url(../Resources/image/AayushKhatiwada.jpg);"></div> 
+                        <div class="pic" style="background-image: url(${pageContext.request.contextPath}/Resources/image/AayushKhatiwada.jpg);"></div> 
                     </td>
                     <td> 
                         <div class="text"> 
@@ -60,14 +60,14 @@
                         </div> 
                         <div class="social-links">
                             <a href="">
-                                <img class="icon" src="../Resources/image/facebook.png" alt="facebook">
+                                <img class="icon" src="${pageContext.request.contextPath}/Resources/image/facebook.png" alt="facebook">
                             </a>   
                             <a href="">                      
-                                <img class="icon" src="../Resources/image/instagram.png" alt="instagram">
+                                <img class="icon" src="${pageContext.request.contextPath}/Resources/image/instagram.png" alt="instagram">
                             </a>                        
 
                             <a href="">
-                                <img class="icon" src="../Resources/image/linkdein.png" alt="linkdein">
+                                <img class="icon" src="${pageContext.request.contextPath}/Resources/image/linkdein.png" alt="linkdein">
                             </a>
                         </div>
                         <a href="Prithivi.html"><button class="see-more">View Details</button></a>
@@ -80,7 +80,7 @@
             <table class="row"><!---table for each-->
                 <tr>
                     <td style="width: 30%;"> 
-                        <div class="pic" style="background-image: url(/images/profile-pic/krishna.png);"></div> 
+                        <div class="pic" style="background-image: url(${pageContext.request.contextPath}.......);"></div> 
                     </td>
                     <td> 
                         <div class="text"> 
@@ -91,13 +91,13 @@
                         </div>     
                         <div class="social-links">
                             <a href="">
-                                <img class="icon" src="../Resources/image/facebook.png" alt="facebook">
+                                <img class="icon" src="${pageContext.request.contextPath}/Resources/image/facebook.png" alt="facebook">
                             </a>   
                             <a href="">                      
-                                <img class="icon" src="../Resources/image/instagram.png" alt="instagram">
+                                <img class="icon" src="${pageContext.request.contextPath}/Resources/image/instagram.png" alt="instagram">
                             </a>                        
                             <a href="">
-                                <img class="icon" src="../Resources/image/linkdein.png" alt="linkdein">
+                                <img class="icon" src="${pageContext.request.contextPath}/Resources/image/linkdein.png" alt="linkdein">
                             </a>
 
                         </div>
@@ -109,7 +109,7 @@
             <table class="row"><!---table for each-->
                 <tr>
                     <td style="width: 30%;"> 
-                        <div class="pic" style="background-image: url(../Resources/image/Abishekkumarsah.jpg);"></div> 
+                        <div class="pic" style="background-image: url(${pageContext.request.contextPath}/Resources/image/Abishekkumarsah.jpg);"></div> 
                     </td>
                     <td> 
                         <div class="text"> 
@@ -119,13 +119,13 @@
                         </div>     
                         <div class="social-links">
                             <a href="">
-                                <img class="icon" src="../Resources/image/facebook.png" alt="facebook">
+                                <img class="icon" src="${pageContext.request.contextPath}/Resources/image/facebook.png" alt="facebook">
                             </a>   
                             <a href="https://www.instagram.com/abhi____0412/">                      
-                                <img class="icon" src="../Resources/image/instagram.png" alt="instagram">
+                                <img class="icon" src="${pageContext.request.contextPath}/Resources/image/instagram.png" alt="instagram">
                             </a>                        
                             <a href="https://www.linkedin.com/in/abhishek-sah-729134330/">
-                                <img class="icon" src="../Resources/image/linkdein.png" alt="linkdein">
+                                <img class="icon" src="${pageContext.request.contextPath}/Resources/image/linkdein.png" alt="linkdein">
                             </a>
                         </div> 
                         <a href="safal.html"><button class="see-more">View Details</button></a>
@@ -136,7 +136,7 @@
              <table class="row"><!---table for each-->
                 <tr>
                     <td style="width: 30%;"> 
-                        <div class="pic" style="background-image: url(../Resources/image/NikeshNeupane.jpg);"> </div> 
+                        <div class="pic" style="background-image: url(${pageContext.request.contextPath}/Resources/image/NikeshNeupane.jpg);"> </div> 
                     </td>
                     <td> 
                         <div class="text"> 
@@ -146,13 +146,13 @@
                         </div>     
                         <div class="social-links">
                             <a href="">
-                                <img class="icon" src="../Resources/image/facebook.png" alt="facebook">
+                                <img class="icon" src="${pageContext.request.contextPath}/Resources/image/facebook.png" alt="facebook">
                             </a>   
                             <a href="https://www.instagram.com/_bookforbreakfast/">                      
-                                <img class="icon" src="../Resources/image/instagram.png" alt="instagram">
+                                <img class="icon" src="${pageContext.request.contextPath}/Resources/image/instagram.png" alt="instagram">
                             </a>                        
                             <a href="">
-                                <img class="icon" src="../Resources/image/linkdein.png" alt="linkdein">
+                                <img class="icon" src="${pageContext.request.contextPath}/Resources/image/linkdein.png" alt="linkdein">
                             </a>
                         </div> 
                         <a href="safal.html"><button class="see-more">View Details</button></a>
