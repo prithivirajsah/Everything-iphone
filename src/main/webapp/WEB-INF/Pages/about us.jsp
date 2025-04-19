@@ -7,7 +7,7 @@
 	<meta name="Author" content="Prithvi">
     <meta http-equiv="refresh" content="120">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
- 	<link rel="stylesheet" href="${pageContext.request.contextPath}/Css/aboutus.css"/>
+ 	<link rel="stylesheet" href="${pageContext.request.contextPath}/Css/about us.css"/>
  	<link rel="stylesheet" href="${pageContext.request.contextPath}/Css/header.css"/>
   	<link rel="stylesheet" href="${pageContext.request.contextPath}/Css/footer.css"/>
 </head>
@@ -17,8 +17,9 @@
 	<jsp:include page="header.jsp"/>
 
 	<div class="main">
-            <h1 align="center" style="color: white; font-size: 90px;">Team Members</h1>
-            <table class="row">        <!---table for each-->
+            <h1 align="center" style=" font-size: 80px;">Team Members</h1>
+            <!---table for each-->
+            <table class="row">        
                 <tr>
                     <td style="width: 30%;"> 
                         <div class="pic" style="background-image: url(${pageContext.request.contextPath}/Resources/image/prithvi.png);"></div>	

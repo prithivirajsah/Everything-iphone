@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <link rel="stylesheet" href="${pageContext.request.contextPath}/Css/Prithivi Aboutus.css"/>
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/Css/PrithiviAboutus.css"/>
   <link rel="stylesheet" href="${pageContext.request.contextPath}/Css/header.css"/>
   	<link rel="stylesheet" href="${pageContext.request.contextPath}/Css/footer.css"/>
   
@@ -19,7 +19,7 @@
     
         <table style="width: 100%;"> 
     <tr>
-        <th style="width: 75%;">
+        <th style="width: 100%;">
             <h1 align="left" style="color: #8a8a8a; margin-left: 7%; font-size: 17px; margin-top: 10px; margin-bottom: 0;"> prithivi(); </h1>
         </th>
         <th class="list">
@@ -29,7 +29,7 @@
                 </li>
                 
                 <li>
-                    <a href="https://github.com/prithivirajsah"><img src="../Resources/image/github.png" alt="Github" style="width: 25px; "></a>
+                    <a href="https://github.com/prithivirajsah"><img src="${pageContext.request.contextPath}/Resources/image/github.png" alt="Github" style="width: 25px; "></a>
                 </li>
             </ul>
         </th>
@@ -39,7 +39,7 @@
         <hr style="width: 90%; background-color: #8a8a8a; height: 1px;">
 
         <div class="about" id="about">
-            <div class="photo" style="background-image: url(../Resources/image/Prithivirajsah.jpg);"></div>
+            <div class="photo" style="background-image: url(${pageContext.request.contextPath}/Resources/image/prithvi.png);"></div>
             <div align="center">
                 <h2 class="about-text"> Howdy!! </h2>
                 <h2 class="about-text">It's me Prithivi Raj Sah.</h2>
