@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000;
+  color: #fff;
+  padding: 1in; 
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.05);
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  border-bottom: 1px solid #444;
+  padding-bottom: 10px;
+}
+
+.about-section {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.about-section p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.team-member {
+  width: 120px;
+  text-align: center;
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+}
+
+.team-member p {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #eee;
+}
+
+.contact-section {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #aaa;
+  text-transform: uppercase;
+}
+
+.contact-section p,
+.socials p {
+  font-size: 15px;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #66b2ff;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+.socials {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.socials h2 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #aaa;
+  text-transform: uppercase;
+}
+
+.socials a {
+  margin-right: 12px;
+  font-size: 14px;
+}

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Registration</title>
-  <link rel="stylesheet" href="${pageContext.request.contextPath}/Css/register.css"/>
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/Css/Register.css"/>
 
 </head>
 <body>

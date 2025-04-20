@@ -7,7 +7,7 @@
 	<meta name="Author" content="Prithvi">
     <meta http-equiv="refresh" content="120">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
- 	<link rel="stylesheet" href="${pageContext.request.contextPath}/Css/about us.css"/>
+ 	<link rel="stylesheet" href="${pageContext.request.contextPath}/Css/aboutus.css"/>
  	<link rel="stylesheet" href="${pageContext.request.contextPath}/Css/header.css"/>
   	<link rel="stylesheet" href="${pageContext.request.contextPath}/Css/footer.css"/>
 </head>
@@ -16,154 +16,26 @@
 <!-- Header Include -->
 	<jsp:include page="header.jsp"/>
 
-	<div class="main">
-            <h1 align="center" style=" font-size: 80px;">Team Members</h1>
-            <!---table for each-->
-            <table class="row">        
-                <tr>
-                    <td style="width: 30%;"> 
-                        <div class="pic" style="background-image: url(${pageContext.request.contextPath}/Resources/image/prithvi.png);"></div>	
-                    </td>
-                    
-                    <td> 
-                        <div class="text"> 
-                             
-                            <h3>Prithivi Raj Sah</h3> 
-                            <h3>BSc Computing student</h3>  
-                        </div> 
-                        <div class="social-links">
-                            <a href="https://www.facebook.com/profile.php?id=100084882249955&mibextid=gik2fB">
-                                <img class="icon" src="${pageContext.request.contextPath}/Resources/image/facebook.png" alt="facebook">
-                            </a>   
-                            <a href="https://www.instagram.com/prithivirajsah1?igsh=YWtncHBibzU4bml5">                      
-                                <img class="icon" src="${pageContext.request.contextPath}/Resources/image/instagram.png" alt="instagram">
-                            </a>                        
-                            <a href="https://www.linkedin.com/in/prithivirajsah-bb4314297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
-                                <img class="icon" src="${pageContext.request.contextPath}/Resources/image/linkdein.png" alt="linkdein">
-                            </a>
-                        </div>
-                        <a href="Prithivirajsahcontroller"><button class="see-more">View Details</button></a>
-                  </td>   
-               </tr>
-           </table>
+<div class="container">
+ <!-- About Us Section -->
+  
+<h1>ABOUT US</h1>
+	<div class="about-section">
+ 	 <p>
+   	 	At <strong>Everything iPhone</strong>, we are dedicated to exploring the world of iPhones — from the latest models to timeless classics.
+    	The iPhone isn't just a smart phone; it's a symbol of innovation, simplicity, and elegance. From its introduction in 2007, the iPhone has 
+    	revolutionized how we communicate, create, and connect. 
+    	Our platform provides guides, accessories, and real human support to help every iPhone user get the most out of their device.
+  	</p>
+  
+  	<p>
+    	Our passionate team of tech lovers works behind the scenes to deliver reliable content, useful tips, and personalized support. Meet the people who make it happen:
+  	</p>
+	</div>
+</div>
 
-            <table class="row"><!---table for each-->
-                <tr>
-                    <td style="width: 30%;"> 
-                        <div class="pic" style="background-image: url(${pageContext.request.contextPath}/Resources/image/AayushKhatiwada.jpg);"></div> 
-                    </td>
-                    <td> 
-                        <div class="text"> 
-                            
-                            <h3>Aayush Khatiwada</h3> 
-                            <h3>BSc Computing student</h3>  
-                               
-                        </div> 
-                        <div class="social-links">
-                            <a href="">
-                                <img class="icon" src="${pageContext.request.contextPath}/Resources/image/facebook.png" alt="facebook">
-                            </a>   
-                            <a href="">                      
-                                <img class="icon" src="${pageContext.request.contextPath}/Resources/image/instagram.png" alt="instagram">
-                            </a>                        
-
-                            <a href="">
-                                <img class="icon" src="${pageContext.request.contextPath}/Resources/image/linkdein.png" alt="linkdein">
-                            </a>
-                        </div>
-                        <a href="Prithivi.html"><button class="see-more">View Details</button></a>
-                    </td>   
-                </tr>
-            </table>
-
-    
-
-            <table class="row"><!---table for each-->
-                <tr>
-                    <td style="width: 30%;"> 
-                        <div class="pic" style="background-image: url(${pageContext.request.contextPath}.......);"></div> 
-                    </td>
-                    <td> 
-                        <div class="text"> 
-                             
-                            <h3>Jayan Rau</h3> 
-                            <h3>BSc Computing student</h3>
-                            
-                        </div>     
-                        <div class="social-links">
-                            <a href="">
-                                <img class="icon" src="${pageContext.request.contextPath}/Resources/image/facebook.png" alt="facebook">
-                            </a>   
-                            <a href="">                      
-                                <img class="icon" src="${pageContext.request.contextPath}/Resources/image/instagram.png" alt="instagram">
-                            </a>                        
-                            <a href="">
-                                <img class="icon" src="${pageContext.request.contextPath}/Resources/image/linkdein.png" alt="linkdein">
-                            </a>
-
-                        </div>
-                        <a href="krishna.html"><button class="see-more">View Details</button></a>
-                    </td>   
-                </tr>
-            </table>
-
-            <table class="row"><!---table for each-->
-                <tr>
-                    <td style="width: 30%;"> 
-                        <div class="pic" style="background-image: url(${pageContext.request.contextPath}/Resources/image/Abishekkumarsah.jpg);"></div> 
-                    </td>
-                    <td> 
-                        <div class="text"> 
-                            
-                            <h3>Abhishek Kumar Sah</h3> 
-                            <h3>BSc Computing student</h3>
-                        </div>     
-                        <div class="social-links">
-                            <a href="">
-                                <img class="icon" src="${pageContext.request.contextPath}/Resources/image/facebook.png" alt="facebook">
-                            </a>   
-                            <a href="https://www.instagram.com/abhi____0412/">                      
-                                <img class="icon" src="${pageContext.request.contextPath}/Resources/image/instagram.png" alt="instagram">
-                            </a>                        
-                            <a href="https://www.linkedin.com/in/abhishek-sah-729134330/">
-                                <img class="icon" src="${pageContext.request.contextPath}/Resources/image/linkdein.png" alt="linkdein">
-                            </a>
-                        </div> 
-                        <a href="safal.html"><button class="see-more">View Details</button></a>
-                    </td>   
-                </tr>
-            </table> 
-
-             <table class="row"><!---table for each-->
-                <tr>
-                    <td style="width: 30%;"> 
-                        <div class="pic" style="background-image: url(${pageContext.request.contextPath}/Resources/image/NikeshNeupane.jpg);"> </div> 
-                    </td>
-                    <td> 
-                        <div class="text"> 
-                            
-                            <h3>Nikesh Neupane</h3>
-                            <h3>BSc Computing student</h3>
-                        </div>     
-                        <div class="social-links">
-                            <a href="">
-                                <img class="icon" src="${pageContext.request.contextPath}/Resources/image/facebook.png" alt="facebook">
-                            </a>   
-                            <a href="https://www.instagram.com/_bookforbreakfast/">                      
-                                <img class="icon" src="${pageContext.request.contextPath}/Resources/image/instagram.png" alt="instagram">
-                            </a>                        
-                            <a href="">
-                                <img class="icon" src="${pageContext.request.contextPath}/Resources/image/linkdein.png" alt="linkdein">
-                            </a>
-                        </div> 
-                        <a href="safal.html"><button class="see-more">View Details</button></a>
-                    </td>   
-                </tr>
-            </table>  
-        </div>
-   
 <!-- Footer Include -->
-        <jsp:include page="footer.jsp"/>
+	<jsp:include page="footer.jsp"/>
         
 </body>
 </html>
