@@ -7,7 +7,7 @@
   <title>Your Cart - Everything iPhone</title>
   <link rel="stylesheet" href="${pageContext.request.contextPath}/Css/addcart.css"/>
   <link rel="stylesheet" href="${pageContext.request.contextPath}/Css/header.css"/>
-  <link rel="stylesheet" href="${pageContext.request.contextPath}/Css/footer.css"/>
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/Css/Footer.css"/>
   
 </head>
 <body>
@@ -36,6 +36,9 @@
     <button onclick="clearCart()">Clear Cart</button>
     
   </div>
+  
+  <!-- Footer Include -->
+	<jsp:include page="footer.jsp"/>
 
   <script>
     const cart = JSON.parse(localStorage.getItem('cart')) || [];

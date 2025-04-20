@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
  	<link rel="stylesheet" href="${pageContext.request.contextPath}/Css/contactus.css"/>
  	<link rel="stylesheet" href="${pageContext.request.contextPath}/Css/header.css"/>
-  	<link rel="stylesheet" href="${pageContext.request.contextPath}/Css/footer.css"/>
+  	<link rel="stylesheet" href="${pageContext.request.contextPath}/Css/Footer.css"/>
 </head>
 <body>
 	<!-- Header Include -->

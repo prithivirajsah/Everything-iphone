@@ -9,7 +9,7 @@
   <title>Everything iPhone</title>
   <link rel="stylesheet" href="${pageContext.request.contextPath}/Css/home.css"/>
   <link rel="stylesheet" href="${pageContext.request.contextPath}/Css/header.css"/>
-  <link rel="stylesheet" href="${pageContext.request.contextPath}/Css/footer.css"/>
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/Css/Footer.css"/>
 </head>
 <body>
 
@@ -93,8 +93,8 @@
         </div>
       </div>
     </div>
-    
-        <!-- iPhone 15 Pro Max -->
+
+    <!-- iPhone 15 Pro Max -->
     <div class="product-card">
       <div class="product-image">
         <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-15-pro-max-1.jpg" alt="iPhone 15 Pro Max">

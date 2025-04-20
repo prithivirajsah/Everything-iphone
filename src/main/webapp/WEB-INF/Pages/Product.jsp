@@ -8,8 +8,7 @@
   <title>Products - Everything iPhone</title>
   <link rel="stylesheet" href="${pageContext.request.contextPath}/Css/Product.css"/>
   <link rel="stylesheet" href="${pageContext.request.contextPath}/Css/header.css"/>
-  <link rel="stylesheet" href="${pageContext.request.contextPath}/Css/footer.css"/>
-  <link rel="stylesheet" href="${pageContext.request.contextPath}/Css/footer.css"/>
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/Css/Footer.css"/>
   
 </head>
 <body>

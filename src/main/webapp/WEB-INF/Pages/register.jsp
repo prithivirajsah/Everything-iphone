@@ -8,13 +8,13 @@
 
 </head>
 <body>
-
-    <div class="register-box">
-        <div class="register-content">
-            <!-- Image Section -->
+	<!-- Image Section -->
             <div class="image-section">
                 <img src="https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-83.jpg" alt="Login Illustration" />
             </div>
+    <div class="register-box">
+        <div class="register-content">
+            
             <!-- Form Section -->
             <div class="form-section">
                 <div class="title">Registration</div>

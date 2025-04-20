@@ -13,13 +13,13 @@
     
     
     <li>
-		<a href="addcart.jsp">
+		<a href="${pageContext.request.contextPath}/addcardcontroller">
     		<img src="${pageContext.request.contextPath}/Resources/image/shopping-cart.png" alt="Cart" style=" width: 20px; height: 20px; vertical-align: middle; margin-left: 5px;" />
   		</a>
 	</li>
 
     <li> 
-    	<a href="login.jsp"> Login </a> 
+    	<a href="${pageContext.request.contextPath}/logincontroller"> Login </a> 
     </li>
   	
   </ul>

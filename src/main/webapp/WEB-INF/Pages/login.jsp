@@ -9,6 +9,9 @@
 </head>
 
 <body>
+	<div class="image-section">
+                <img src="https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-83.jpg" alt="Login Illustration" />
+    </div>
     <div class="container">
         <div class="form-container">
             <div class="title">Login</div>
