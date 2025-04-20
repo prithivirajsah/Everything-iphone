@@ -22,7 +22,7 @@
     <div class="textbox">
       <h1>Everything iPhone</h1>
       <p>Explore every iPhone model from iPhone X to iPhone 16 Pro Max</p>
-      <a href="Product.jsp" class="shop-button">Shop Now</a>
+      <a href="productcontroller" class="shop-button">Shop More</a>
       <div class="launch-section">
         <h2>Newly Launched</h2>
         <img src="${pageContext.request.contextPath}/Resources/image/iphone16promax.jpg" alt="Newly Launched iPhone"  class="launch-img"/>

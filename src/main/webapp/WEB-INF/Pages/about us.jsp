@@ -42,7 +42,7 @@
                                 <img class="icon" src="${pageContext.request.contextPath}/Resources/image/linkdein.png" alt="linkdein">
                             </a>
                         </div>
-                        <a href="Prithivi Aboutus.jsp"><button class="see-more">View Details</button></a>
+                        <a href="Prithivirajsahcontroller"><button class="see-more">View Details</button></a>
                   </td>   
                </tr>
            </table>

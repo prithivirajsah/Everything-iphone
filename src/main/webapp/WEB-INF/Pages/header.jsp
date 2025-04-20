@@ -13,7 +13,12 @@
     <li><a href="${pageContext.request.contextPath}/Contactuscontroller" class="<%= currentPage.endsWith("contact us.jsp") ? "active" : "" %>">Contact us</a></li>
     
     
-    <li><a href="addcart.jsp">My Cart</a></li>
+    <li>
+		<a href="addcart.jsp">
+    		<img src="${pageContext.request.contextPath}/Resources/image/shopping-cart.png" alt="Cart" style=" width: 20px; height: 20px; vertical-align: middle; margin-left: 5px;" />
+  		</a>
+	</li>
+
     <li><a href="login.jsp"> Login </a></li>
   	
   </ul>
