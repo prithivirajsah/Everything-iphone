@@ -60,13 +60,6 @@
                         </div>
                     </div>
 
-                    <div class="Signupform">
-                        <div class="detail">
-                            <label for="province">Province:</label>
-                            <input type="text" id="province" name="province" required>
-                        </div>
-                    </div>
-
                     <div class="Signup">
                         <div class="detail">
                             <label for="city">City:</label>
