@@ -8,7 +8,6 @@
   <ul>
     <li><a href="${pageContext.request.contextPath}/homecontroller" class="<%= currentPage.endsWith("Home.jsp") ? "active" : "" %>">Home</a></li>
     <li><a href="${pageContext.request.contextPath}/productcontroller" class="<%= currentPage.endsWith("product.jsp") ? "active" : "" %>">Products</a></li>
-    <li><a href="${pageContext.request.contextPath}/Researchcontroller" class="<%= currentPage.endsWith("research.jsp") ? "active" : "" %>">Research</a></li>
     <li><a href="${pageContext.request.contextPath}/AboutUscontroller" class="<%= currentPage.endsWith("aboutus.jsp") ? "active" : "" %>">About Us</a></li>
     <li><a href="${pageContext.request.contextPath}/Contactuscontroller" class="<%= currentPage.endsWith("contact us.jsp") ? "active" : "" %>">Contact us</a></li>
     

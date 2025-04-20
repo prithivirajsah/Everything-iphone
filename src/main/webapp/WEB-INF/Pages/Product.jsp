@@ -380,7 +380,7 @@
     
     /* thapeko part for Cart */
     
-   function buyNow(name, price) {
+   function AddtoCart(name, price) {
      const cart = [{
      name: name,
      price: price,
