@@ -8,16 +8,16 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Servlet implementation class homecontroller 
+ * Servlet implementation class Admincontroller
  */
-@WebServlet("/homecontroller" )
-public class homecontroller extends HttpServlet {
+@WebServlet("/Admincontroller")
+public class Admincontroller extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public homecontroller() {
+    public Admincontroller() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -27,7 +27,7 @@ public class homecontroller extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		request.getRequestDispatcher("WEB-INF/Pages/Home.jsp").forward(request, response);
+		request.getRequestDispatcher("WEB-INF/Pages/Admin.jsp").forward(request, response);
 	}
 
 	/**
@@ -37,4 +37,5 @@ public class homecontroller extends HttpServlet {
 		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
+
 }
