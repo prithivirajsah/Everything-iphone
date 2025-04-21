@@ -77,7 +77,7 @@
 
     <!-- Reports & Analytics -->
     <div id="analytics" class="section">
-      <h3>Reports & Analytics</h3>
+      <h3>Reports and Analytics</h3>
       <table>
         <tr><th>Metric</th><th>Value</th></tr>
         <tr><td>Top-Selling Product</td><td>Wireless Headphones</td></tr>
