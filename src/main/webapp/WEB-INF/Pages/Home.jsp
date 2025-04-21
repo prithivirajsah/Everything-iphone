@@ -47,7 +47,7 @@
         </div>
         <div class="price-action">
           <span class="price">234000 NPR</span>
-          <a href="addcart.jsp"><button class="buy-button" >Buy Now</button></a> 
+          <a href="addcardcontroller"><button class="buy-button" >Add To Cart</button></a> 
         </div>
       </div>
     </div>
@@ -68,7 +68,7 @@
         </div>
         <div class="price-action">
           <span class="price">200000 NPR</span>
-          <button class="buy-button">Buy Now</button>
+          <button class="buy-button">Add To Cart</button>
         </div>
       </div>
     </div>
@@ -89,7 +89,7 @@
         </div>
         <div class="price-action">
           <span class="price">180000 NPR</span>
-          <button class="buy-button">Buy Now</button>
+          <button class="buy-button">Add To Cart</button>
         </div>
       </div>
     </div>
@@ -109,7 +109,7 @@
         </div>
         <div class="price-action">
           <span class="price">150000 NPR</span>
-          <button class="buy-button">Buy Now</button>
+          <button class="buy-button">Add To Cart</button>
         </div>
       </div>
     </div>

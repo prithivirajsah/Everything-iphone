@@ -8,7 +8,8 @@
   <title>Products - Everything iPhone</title>
   <link rel="stylesheet" href="${pageContext.request.contextPath}/Css/Product.css"/>
   <link rel="stylesheet" href="${pageContext.request.contextPath}/Css/header.css"/>
-  <link rel="stylesheet" href="${pageContext.request.contextPath}/Css/Footer.css"/>
+  <link rel="stylesheet" href="${pageContext.request.contextPath}/Css/footer.css"/>
+  
   
 </head>
 <body>
@@ -49,7 +50,7 @@
         </div>
         <div class="price-action">
           <span class="price">234000 NPR</span>
-          <a href="addcart.jsp"><button class="buy-button" >Buy Now</button></a> 
+          <button class="buy-button">Add To Cart</button>
         </div>
       </div>
     </div>
@@ -70,7 +71,7 @@
         </div>
         <div class="price-action">
           <span class="price">200000 NPR</span>
-          <button class="buy-button">Buy Now</button>
+          <button class="buy-button">Add To Cart</button>
         </div>
       </div>
     </div>
@@ -91,7 +92,7 @@
         </div>
         <div class="price-action">
           <span class="price">180000 NPR</span>
-          <button class="buy-button">Buy Now</button>
+          <button class="buy-button">Add To Cart</button>
         </div>
       </div>
     </div>
@@ -111,7 +112,7 @@
         </div>
         <div class="price-action">
           <span class="price">150000 NPR</span>
-          <button class="buy-button">Buy Now</button>
+          <button class="buy-button">Add To Cart</button>
         </div>
       </div>
     </div>
@@ -131,7 +132,7 @@
         </div>
         <div class="price-action">
           <span class="price">125000</span>
-          <button class="buy-button">Buy Now</button>
+          <button class="buy-button">Add To Cart</button>
         </div>
       </div>
     </div>
@@ -151,7 +152,7 @@
         </div>
         <div class="price-action">
           <span class="price">110000 NPR</span>
-          <button class="buy-button">Buy Now</button>
+          <button class="buy-button">Add To Cart</button>
         </div>
       </div>
     </div>
@@ -171,7 +172,7 @@
         </div>
         <div class="price-action">
           <span class="price">140000 NPR</span>
-          <button class="buy-button">Buy Now</button>
+          <button class="buy-button">Add To Cart</button>
         </div>
       </div>
     </div>
@@ -191,7 +192,7 @@
         </div>
         <div class="price-action">
           <span class="price">125000 NPR</span>
-          <button class="buy-button">Buy Now</button>
+         <button class="buy-button">Add To Cart</button>
         </div>
       </div>
     </div>
@@ -211,7 +212,7 @@
         </div>
         <div class="price-action">
           <span class="price">100000 NPR</span>
-          <button class="buy-button">Buy Now</button>
+          <button class="buy-button">Add To Cart</button>
         </div>
       </div>
     </div>
@@ -224,14 +225,14 @@
       </div>
       <div class="product-info">
         <h3 class="product-name">iPhone 14 Plus</h3>
-        <p class="product-description">The looongest battery life of any iPhone Ever.</p>
+        <p class="product-description">The longest battery life of any iPhone Ever.</p>
         <div class="color-info">
           <div class="color-dot" style="background: #F4E8CE;"></div>
           <span class="color-name">Gold</span>
         </div>
         <div class="price-action">
           <span class="price">110000 NPR</span>
-          <button class="buy-button">Buy Now</button>
+          <button class="buy-button">Add To Cart</button>
         </div>
       </div>
     </div>
@@ -251,7 +252,7 @@
         </div>
         <div class="price-action">
           <span class="price">90000 NPR</span>
-          <button class="buy-button">Buy Now</button>
+         <button class="buy-button">Add To Cart</button>
         </div>
       </div>
     </div>
@@ -271,7 +272,7 @@
         </div>
         <div class="price-action">
           <span class="price">80000 NPR</span>
-          <button class="buy-button">Buy Now</button>
+         <button class="buy-button">Add To Cart</button>
         </div>
       </div>
     </div>
@@ -291,7 +292,7 @@
         </div>
         <div class="price-action">
           <span class="price">70000 NPR</span>
-          <button class="buy-button">Buy Now</button>
+          <button class="buy-button">Add To Cart</button>
         </div>
       </div>
     </div>
@@ -311,7 +312,7 @@
         </div>
         <div class="price-action">
           <span class="price">65000 NPR</span>
-          <button class="buy-button">Buy Now</button>
+         <button class="buy-button">Add To Cart</button>
         </div>
       </div>
     </div>
@@ -331,7 +332,7 @@
         </div>
         <div class="price-action">
           <span class="price">60000 NPR</span>
-          <button class="buy-button">Buy Now</button>
+        <button class="buy-button">Add To Cart</button>
         </div>
       </div>
     </div>
@@ -351,7 +352,7 @@
         </div>
         <div class="price-action">
           <span class="price">4000 NPR</span>
-          <button class="buy-button">Buy Now</button>
+     <button class="buy-button">Add To Cart</button>
         </div>
       </div>
     </div>
@@ -359,7 +360,7 @@
 
     <jsp:include page="footer.jsp"/>
 
-<script>
+  <script>
     const searchInput = document.querySelector('.search-input');
     const storageSelect = document.querySelector('.storage-select');
     const productCards = document.querySelectorAll('.product-card');
@@ -373,27 +374,12 @@
         const storage = card.querySelector('.storage-badge').textContent;
         const matchesText = name.includes(searchTerm);
         const matchesStorage = selectedStorage === 'all' || storage.includes(selectedStorage);
-        card.style.display = (matchesText && matchesStorage) ? 'block' : 'none';
+        card.style.display = matchesText && matchesStorage ? 'block' : 'none';
       });
     }
-    
-    /* thapeko part for Cart */
-    
-   function AddtoCart(name, price) {
-     const cart = [{
-     name: name,
-     price: price,
-     quantity: 1
-    }];
-
-        localStorage.setItem("cart", JSON.stringify(cart));
-        window.location.href = "<%= request.getContextPath() %>/cart.jsp";
-
-      }
 
     searchInput.addEventListener('input', filterProducts);
     storageSelect.addEventListener('change', filterProducts);
   </script>
-
 </body>
 </html>
