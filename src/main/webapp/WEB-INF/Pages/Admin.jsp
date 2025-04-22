@@ -34,8 +34,8 @@
 
       <table>
         <tr><th>Product</th><th>Price</th><th>Stock</th><th>Sales</th><th>Action</th></tr>
-        <tr><td>Wireless Headphones</td><td>$59</td><td>120</td><td>300</td><td><button>Delete</button></td></tr>
-        <tr><td>Smartwatch</td><td>$99</td><td>80</td><td>150</td><td><button>Delete</button></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td><button>Delete</button></td></tr>
+        <tr><td></td><td></td><td></td><td></td><td><button>Delete</button></td></tr>
       </table>
     </div>
 
