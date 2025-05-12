@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 50vh;
+    background-color: black;
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.left, .right {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+    border: 1px solid #444;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.row .col {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+}
+
+.left {
+    flex: 1 1 35%;
+    margin-right: 4%;
+}
+
+.right {
+    flex: 1 1 60%;
+}
+
+.contactTitle h2 {
+    position: relative;
+    font-size: 28px;
+    color: #ddd;
+    margin-bottom: 25px;
+}
+
+.contactTitle h2::before,
+.contactTitle h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+}
+
+.contactTitle h2::before {
+    width: 50%;
+    height: 1px;
+    background-color: #888;
+    top: 120%;
+}
+
+.contactTitle h2::after {
+    width: 25%;
+    height: 3px;
+    background-color: dodgerblue;
+    top: calc(120% - 1px);
+}
+
+.contactInfo {
+    margin-bottom: 16px;
+}
+
+.iconGroup {
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.iconGroup .icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.iconGroup .details span {
+    display: block;
+    font-size: 18px;
+}
+
+.iconGroup .details span:first-child {
+    text-transform: uppercase;
+    color: #ccc;
+}
+
+.iconGroup .details span:last-child {
+    color: #888;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    transition: 0.4s;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+    background-color: #2e2e2e;
+    border: 1px solid dodgerblue;
+}
+
+.messageForm {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    gap: 20px;
+}
+
+.inputGroup {
+    position: relative;
+    width: 100%;
+}
+
+.halfWidth {
+    flex-basis: 48%;
+}
+
+.fullWidth {
+    flex-basis: 100%;
+}
+
+.messageForm input,
+.messageForm textarea {
+    width: 100%;
+    font-size: 18px;
+    background-color: #2e2e2e;
+    color: #ddd;
+    border: none;
+    border-bottom: 2px solid #666;
+    padding: 6px 0;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+    height: 220px;
+}
+
+textarea::-webkit-scrollbar {
+    width: 5px;
+}
+
+textarea::-webkit-scrollbar-track {
+    background-color: #1e1e1e;
+    border-radius: 15px;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: dodgerblue;
+    border-radius: 15px;
+}
+
+.inputGroup label {
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    color: #888;
+    font-size: 18px;
+    transition: 0.4s;
+    pointer-events: none;
+}
+
+.inputGroup input:focus ~ label,
+.inputGroup textarea:focus ~ label,
+.inputGroup input:valid ~ label,
+.inputGroup textarea:valid ~ label {
+    transform: translateY(-30px);
+    font-size: 16px;
+}
+
+.inputGroup button {
+    padding: 8px 16px;
+    font-size: 18px;
+    background-color: dodgerblue;
+    color: #ddd;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.4s;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.inputGroup button:hover {
+    background-color: #2e2e2e;
+    color: dodgerblue;
+    border: 1px solid dodgerblue;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
