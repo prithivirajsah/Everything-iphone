@@ -6,72 +6,7 @@
     <meta charset="UTF-8">
     <title>User Management</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Basic Reset */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: Arial, sans-serif;
-}
-
-body {
-	background-color: #f5f7fa;
-	color: #333; 
-}
-/* Sidebar Styles */
-.sidebar {
-  	width: 250px;
-  	background: #2c3e50;
-  	color: white;
-  	height: 100vh;
-  	position: fixed;
-  	padding: 15px;
-  	transition: all 0.3s;
-}
-
-.sidebar h2 {
-  text-align: center;
-  margin-bottom: 30px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.sidebar ul {
-  list-style: none;
-}
-
-.sidebar ul li {
-  padding: 10px ;
-}
-
-.sidebar ul li a {
-  color: white;
-  text-decoration: none;
-  display: block;
-  padding: 10px;
-  border-radius: 5px;
-  transition: all 0.3s;
-}
-
-.sidebar ul li a:hover {
-  background: #34495e;
-}
-
-.sidebar ul li a.active {
-  background: #3498db;
-}
-/* Responsive Sidebar */
-@media (max-width: 768px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-}
-
-
-</style>
+<link rel="stylesheet" href="${pageContext.request.contextPath}/Css/UserManagement.css"/>
 </head>
 <body>
 <div class="sidebar">
