@@ -96,7 +96,7 @@ public class AdminProductServlet extends HttpServlet {
     private ProductModel extractProductFromRequest(HttpServletRequest request) {
         ProductModel product = new ProductModel();
         
-        // For update, we get productId from the form
+
         if (request.getParameter("productId") != null && !request.getParameter("productId").isEmpty()) {
             product.setProductId(Integer.parseInt(request.getParameter("productId")));
         }

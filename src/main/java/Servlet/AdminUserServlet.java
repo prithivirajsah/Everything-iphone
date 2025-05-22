@@ -104,7 +104,7 @@ public class AdminUserServlet extends HttpServlet {
     private UserModel extractUserFromRequest(HttpServletRequest request) {
         UserModel user = new UserModel();
         
-        // For update, we get userId from the form
+ 
         if (request.getParameter("userId") != null && !request.getParameter("userId").isEmpty()) {
             user.setUserId(Integer.parseInt(request.getParameter("userId")));
         }
@@ -118,7 +118,7 @@ public class AdminUserServlet extends HttpServlet {
         user.setState(request.getParameter("state"));
         user.setRole(request.getParameter("role"));
         
-        // For new users, set a default password
+
         if (user.getUserId() == 0) {
             user.setPassword("defaultPassword123");
         }

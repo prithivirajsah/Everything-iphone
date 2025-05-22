@@ -257,7 +257,7 @@ body {
       <div class="header-actions">
         <span id="current-date"><%= new java.util.Date() %></span>
         <form action="logout.jsp" method="post">
-          <button class="logout-btn">Logout</button>
+        <a href="${pageContext.request.contextPath}/logout" class="logout-btn">Logout</a>
         </form>
       </div>
     </header>

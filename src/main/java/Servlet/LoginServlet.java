@@ -29,14 +29,14 @@ public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        // Check if user is already logged in
+  
         UserModel loggedInUser = (UserModel) SessionUtil.getAttribute(request, "loggedInUser");
         if (loggedInUser != null) {
             redirectBasedOnRole(response, loggedInUser.getRole());
             return;
         }
 
-        // Forward to login page
+
         request.getRequestDispatcher("/WEB-INF/Pages/login.jsp").forward(request, response);
     }
 
@@ -50,14 +50,14 @@ public class LoginServlet extends HttpServlet {
             UserModel user = userDao.getUserByUsernameAndPassword(username, password);
 
             if (user != null) {
-                // Set session attributes
+       
                 SessionUtil.setAttribute(request, "loggedInUser", user);
                 
-                // Set cookies
+          
                 CookieUtil.addCookie(response, "username", user.getUserName(), 60 * 60 * 24 * 7); // 7 days
                 CookieUtil.addRoleCookie(response, user.getRole(), 60 * 60 * 24 * 7); // 7 days
                 
-                // Role-based redirection
+               
                 redirectBasedOnRole(response, user.getRole());
             } else {
                 request.setAttribute("error", "Invalid username or password.");
@@ -72,7 +72,7 @@ public class LoginServlet extends HttpServlet {
     
     private void redirectBasedOnRole(HttpServletResponse response, String role) throws IOException {
         if ("admin".equalsIgnoreCase(role)) {
-            response.sendRedirect("AdminProductServlet"); // This is the admin redirect
+            response.sendRedirect("AdminProductServlet"); 
         } else {
             response.sendRedirect("HomeServlet"); 
         }

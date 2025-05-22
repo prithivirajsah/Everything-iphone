@@ -28,7 +28,7 @@ public class UserServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) 
             throws ServletException, IOException {
-        // Forward to registration page
+
         request.getRequestDispatcher("/WEB-INF/Pages/register.jsp").forward(request, response);
     }
 
@@ -46,7 +46,7 @@ public class UserServlet extends HttpServlet {
 
     private void registerUser(HttpServletRequest request, HttpServletResponse response) 
             throws ServletException, IOException {
-        // Get parameters from request
+
         String userName = request.getParameter("userName");
         String fullName = request.getParameter("fullName");
         String email = request.getParameter("email");
@@ -57,7 +57,7 @@ public class UserServlet extends HttpServlet {
         String password = request.getParameter("password");
         String confirmPassword = request.getParameter("confirmPassword");
 
-        // Basic validation
+
         if (userName == null || userName.trim().isEmpty() ||
             email == null || email.trim().isEmpty() ||
             password == null || password.trim().isEmpty()) {
@@ -72,7 +72,7 @@ public class UserServlet extends HttpServlet {
             return;
         }
 
-        // Create UserModel object
+
         UserModel user = new UserModel();
         user.setUserName(userName);
         user.setFullName(fullName);
@@ -82,27 +82,27 @@ public class UserServlet extends HttpServlet {
         user.setCity(city);
         user.setState(state);
         user.setPassword(password);
-        // Role will be set to "user" by default in DAO
+
 
         try {
-            // Add user to database (password will be hashed in DAO)
+           
             userDao.addUser(user);
             CookieUtil.addRoleCookie(response, "user", 60 * 60 * 24 * 30); // 30 days
-            // Set success message in session and redirect to login
+       
             request.getSession().setAttribute("success", "Registration successful! Please login.");
             response.sendRedirect(request.getContextPath() + "/login");
             
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
             
-            // Check if it's a duplicate entry error (MySQL error code for duplicate entry is 1062)
+
             if (e instanceof SQLException && ((SQLException)e).getErrorCode() == 1062) {
                 request.setAttribute("error", "Username or email already exists!");
             } else {
                 request.setAttribute("error", "Registration failed. Please try again.");
             }
             
-            // Set user data back to form for correction
+          
             forwardWithUserData(request, response, userName, fullName, email, phoneNumber, gender, city, state);
         }
     }

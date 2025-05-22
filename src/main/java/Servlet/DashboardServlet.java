@@ -23,7 +23,7 @@ public class DashboardServlet extends HttpServlet {
             Dao.OrderModelDAO orderDao = new Dao.OrderModelDAO();
 
             int totalUsers = userDao.getAllUsers().size();
-            int totalOrders = orderDao.getTotalOrders(); // You need to implement this in OrderModelDAO
+            int totalOrders = orderDao.getTotalOrders(); 
             int deliveredOrders = orderDao.getDeliveredOrders();
             double totalRevenue = orderDao.getTotalRevenue();
             Map<String, Integer> statusDistribution = orderDao.getOrderStatusDistribution();

@@ -28,14 +28,12 @@ public class adminlogout extends HttpServlet {
 @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        // Invalidate the session and remove all session attributes
+        
         SessionUtil.invalidateSession(request);
         
-        // Remove cookies - using the correct method names
         CookieUtil.deleteCookie(response, "username");
         CookieUtil.deleteRoleCookie(response);
         
-        // Redirect to login page with a logout message
         response.sendRedirect(request.getContextPath() + "/login?logout=true");
 }
 

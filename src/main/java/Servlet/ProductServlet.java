@@ -25,7 +25,7 @@ public class ProductServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ProductModelDAO productDAO = new ProductModelDAO();
         
-        // Get search and filter parameters
+
         String searchTerm = request.getParameter("search");
         String storageFilter = request.getParameter("storage");
         
@@ -33,10 +33,10 @@ public class ProductServlet extends HttpServlet {
             List<ProductModel> productList;
             
             if ((searchTerm != null && !searchTerm.isEmpty()) || (storageFilter != null && !storageFilter.equals("all"))) {
-                // Apply filters if parameters exist
+              
                 productList = productDAO.getFilteredProducts(searchTerm, storageFilter);
             } else {
-                // Get all products if no filters
+     
                 productList = productDAO.getAllProducts();
             }
             

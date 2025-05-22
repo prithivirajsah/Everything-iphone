@@ -38,10 +38,10 @@ public class ProductDetailsServlet extends HttpServlet {
                 return;
             }
             
-            // Set product as request attribute
+       
             request.setAttribute("product", product);
             
-            // Forward to product details JSP
+
             RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/Pages/Productdetails.jsp");
             dispatcher.forward(request, response);
             

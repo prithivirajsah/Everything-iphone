@@ -49,7 +49,7 @@ public class CheckoutServlet extends HttpServlet {
         }
 
         try {
-            // Get user's cart
+
             CartModel cart = cartDao.getCartByUserId(userId);
             if (cart == null || cart.getCartQty() == 0) {
                 session.setAttribute("errorMessage", "Your cart is empty");
@@ -57,16 +57,16 @@ public class CheckoutServlet extends HttpServlet {
                 return;
             }
 
-            // Get cart items
+  
             List<CartItemModels> cartItems = cartItemDao.getCartItemsByCartId(cart.getCartId());
             
-            // Calculate total quantity and amount
+
             int totalQuantity = cartItems.stream().mapToInt(CartItemModels::getQuantity).sum();
             double totalAmount = cartItems.stream()
                 .mapToDouble(CartItemModels::getTotalProductPrice)
                 .sum();
 
-            // Create new order
+     
             OrderModel order = new OrderModel();
             order.setUserId(userId);
             order.setOrderDate(new Date());
@@ -74,10 +74,10 @@ public class CheckoutServlet extends HttpServlet {
             order.setTotalAmount(totalAmount);
             order.setOrderStatus("Processing");
             
-            // Add order to database and get the generated ID
+   
             int orderId = orderDao.addOrder(order);
             
-            // Add order items
+
             for (CartItemModels cartItem : cartItems) {
                 OrderItemModels orderItem = new OrderItemModels();
                 orderItem.setOrderId(orderId);
@@ -86,18 +86,18 @@ public class CheckoutServlet extends HttpServlet {
                 orderItem.setPrice(cartItem.getProductPrice());
                 orderItemDao.addOrderItem(orderItem);
                 
-                // Update product stock
+
                 ProductModel product = productDao.getProductById(cartItem.getProductId());
                 product.setStock(product.getStock() - cartItem.getQuantity());
                 productDao.updateProduct(product);
             }
             
-            // Clear the cart
+
             cartItemDao.deleteAllCartItems(cart.getCartId());
             cart.setCartQty(0);
             cartDao.updateCart(cart);
             
-            // Set success message and redirect back to cart
+
             session.setAttribute("successMessage", "Order #" + orderId + " placed successfully!");
             response.sendRedirect("HomeServlet");
             

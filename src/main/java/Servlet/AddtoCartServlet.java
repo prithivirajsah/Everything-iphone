@@ -39,11 +39,11 @@ public class AddtoCartServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) 
             throws ServletException, IOException {
-        // First check session
+
         HttpSession session = request.getSession();
         Integer userId = (Integer) session.getAttribute("userId");
         
-        // If no session, check cookie
+   
         if (userId == null) {
             Cookie usernameCookie = CookieUtil.getCookie(request, "username");
             if (usernameCookie != null) {
@@ -69,14 +69,14 @@ public class AddtoCartServlet extends HttpServlet {
         }
 
         try {
-            // Get user's cart
+    
             CartModel cart = cartDao.getCartByUserId(userId);
             if (cart != null) {
-                // Get cart items with product details
+              
                 List<CartItemModels> cartItems = cartItemDao.getCartItemsByCartId(cart.getCartId());
                 request.setAttribute("cartItems", cartItems);
                 
-                // Calculate total price
+       
                 double total = cartItems.stream()
                     .mapToDouble(CartItemModels::getTotalProductPrice)
                     .sum();
@@ -96,11 +96,11 @@ public class AddtoCartServlet extends HttpServlet {
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) 
             throws ServletException, IOException {
-        // First check session
+   
         HttpSession session = request.getSession();
         Integer userId = (Integer) session.getAttribute("userId");
         
-        // If no session, check cookie
+     
         if (userId == null) {
             Cookie usernameCookie = CookieUtil.getCookie(request, "username");
             if (usernameCookie != null) {
@@ -109,7 +109,7 @@ public class AddtoCartServlet extends HttpServlet {
                     UserModel user = userDao.getUserByUsername(username);
                     if (user != null) {
                         userId = user.getUserId();
-                        session.setAttribute("userId", userId); // Set in session for future requests
+                        session.setAttribute("userId", userId); 
                     } else {
                         response.sendRedirect("login.jsp");
                         return;
@@ -155,7 +155,7 @@ public class AddtoCartServlet extends HttpServlet {
             String quantityParam = request.getParameter("quantity");
             int quantity = quantityParam != null ? Integer.parseInt(quantityParam) : 1;
 
-            // Get or create cart
+     
             CartModel cart = cartDao.getCartByUserId(userId);
             if (cart == null) {
                 cart = new CartModel();
@@ -165,7 +165,7 @@ public class AddtoCartServlet extends HttpServlet {
                 cart = cartDao.getCartByUserId(userId);
             }
 
-            // Get product
+
             ProductModel product = productDao.getProductById(productId);
             if (product == null) {
                 request.setAttribute("errorMessage", "Product not found");
@@ -173,30 +173,30 @@ public class AddtoCartServlet extends HttpServlet {
                 return;
             }
 
-            // Check stock availability
+
             if (product.getStock() < quantity) {
                 request.setAttribute("errorMessage", "Not enough stock available");
                 doGet(request, response);
                 return;
             }
 
-            // Check if item exists
+
             CartItemModels existingItem = cartItemDao.getCartItem(cart.getCartId(), productId);
             
             if (existingItem != null) {
-                // Check if total quantity exceeds stock
+
                 if (product.getStock() < (existingItem.getQuantity() + quantity)) {
                     request.setAttribute("errorMessage", "Not enough stock available");
                     doGet(request, response);
                     return;
                 }
                 
-                // Update existing item
+
                 existingItem.setQuantity(existingItem.getQuantity() + quantity);
                 existingItem.setTotalProductPrice(product.getProductPrice() * existingItem.getQuantity());
                 cartItemDao.updateCartItem(existingItem);
             } else {
-                // Add new item
+
                 CartItemModels newItem = new CartItemModels();
                 newItem.setCartId(cart.getCartId());
                 newItem.setProductId(productId);
@@ -205,7 +205,7 @@ public class AddtoCartServlet extends HttpServlet {
                 cartItemDao.addCartItem(newItem);
             }
 
-            // Update cart quantity
+
             cart.setCartQty(cart.getCartQty() + quantity);
             cartDao.updateCart(cart);
 
@@ -230,11 +230,11 @@ public class AddtoCartServlet extends HttpServlet {
 
         CartItemModels item = cartItemDao.getCartItem(cart.getCartId(), productId);
         if (item != null) {
-            // Update cart quantity
+
             cart.setCartQty(cart.getCartQty() - item.getQuantity());
             cartDao.updateCart(cart);
             
-            // Remove item
+
             cartItemDao.deleteCartItem(cart.getCartId(), productId);
             
             request.setAttribute("successMessage", "Item removed from cart");
@@ -259,22 +259,22 @@ public class AddtoCartServlet extends HttpServlet {
         if (item != null) {
             ProductModel product = productDao.getProductById(productId);
             
-            // Check stock availability
+ 
             if (product.getStock() < newQuantity) {
                 request.setAttribute("errorMessage", "Not enough stock available");
                 doGet(request, response);
                 return;
             }
             
-            // Calculate quantity difference
+ 
             int quantityDiff = newQuantity - item.getQuantity();
             
-            // Update item
+
             item.setQuantity(newQuantity);
             item.setTotalProductPrice(product.getProductPrice() * newQuantity);
             cartItemDao.updateCartItem(item);
             
-            // Update cart quantity
+     
             cart.setCartQty(cart.getCartQty() + quantityDiff);
             cartDao.updateCart(cart);
             
