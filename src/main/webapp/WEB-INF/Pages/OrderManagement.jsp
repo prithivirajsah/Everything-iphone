@@ -214,7 +214,6 @@ h1 {
                     <th>User ID</th>
                     <th>Status</th>
                     <th>Total</th>
-                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -241,10 +240,6 @@ h1 {
                     </td>
                     <td>$<%= String.format("%.2f", order.getTotalAmount()) %></td>
                     <td>
-                        <form action="OrderManagementServlet" method="post" style="display:inline;">
-                            <input type="hidden" name="orderId" value="<%= order.getOrderId() %>"/>
-                            <button type="submit" name="action" value="delete" class="delete-btn" onclick="return confirm('Are you sure you want to delete this order?');">Delete</button>
-                        </form>
                     </td>
                 </tr>
                 <%
